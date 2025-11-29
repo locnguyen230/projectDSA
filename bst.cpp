@@ -18,7 +18,7 @@ string toLower(string s) {
 // =======================
 //  INSERT — Thêm sinh viên vào BST
 // =======================
-void insertSV(treeNode* &root, SinhVien sv) {
+void insertSV(treeNode*& root, SinhVien sv) {
     if (root == nullptr) {
         root = new treeNode(sv);
         return;
@@ -131,6 +131,7 @@ void printOneSV(SinhVien sv, int stt) {
     cout << "| " << left << setw(17) << sv.name;
     cout << "|  " << left << setw(6) << sv.id;
     cout << "|  " << left << setw(5) << sv.grade << "|\n";
+    cout << "+-----------------------------------------+\n";
 }
 
 void printSV(treeNode* root, int &stt ) {

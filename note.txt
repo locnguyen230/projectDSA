@@ -1,0 +1,3 @@
+bug ngay 2 cua quan ly sv sau khi them lai ko co sv
+
+bug loi khi xoa het ma dung 4 bi ngat

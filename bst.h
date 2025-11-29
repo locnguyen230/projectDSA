@@ -22,7 +22,7 @@ struct treeNode {
 };
 
 // ===== Các hàm xử lý BST =====
-void insertSV(treeNode* root, SinhVien sv);
+void insertSV(treeNode*& root, SinhVien sv);
 treeNode* searchSV(treeNode* root, string id);
 treeNode* deleteSV(treeNode* root, string id);
 

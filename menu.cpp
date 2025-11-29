@@ -13,12 +13,16 @@ void menuStudent(ClassGroup* lop) {
     int choice;
 
     while (true) {
-        cout << "\n===== MENU SINH VIEN - LOP " << lop->classID << " =====\n";
-        cout << "1. Them sinh vien\n";
-        cout << "2. Tim sinh vien theo ID\n";
-        cout << "3. Xoa sinh vien\n";
-        cout << "4. In danh sach sinh vien (in-order)\n";
-        cout << "0. Quay lai\n";
+        cout << "+--------------------------------------+\n";
+        cout << "|===== MENU SINH VIEN - LOP " << lop->classID << " =====|\n";
+        cout << "|1. Them sinh vien                     |\n";
+        cout << "|2. Tim sinh vien theo ID              |\n";
+        cout << "|3. Xoa sinh vien                      |\n";
+        cout << "|4. In danh sach sinh vien             |\n";
+        cout << "|5. In danh sach sinh vien theo diem   |\n";
+        cout << "|6. Tao bang thong ke                  |\n";
+        cout << "|0. Quay lai                           |\n";
+        cout << "+--------------------------------------+\n";
         cout << "Nhap lua chon: ";
         cin >> choice;
         cin.ignore();
@@ -83,13 +87,15 @@ void menuClass(hashTableClass table[]) {
     string classID;
 
     while (true) {
-        cout << "\n===== MENU QUAN LY LOP =====\n";
-        cout << "1. Them lop\n";
-        cout << "2. Xoa lop\n";
-        cout << "3. Tim lop\n";
-        cout << "4. Xem tat ca lop\n";
-        cout << "5. Chon lop de quan ly sinh vien\n";
-        cout << "0. Thoat\n";
+        cout << "+------------------------------------+\n";
+        cout << "|========= MENU QUAN LY LOP =========|\n";
+        cout << "|1. Them lop                         |\n";
+        cout << "|2. Xoa lop                          |\n";
+        cout << "|3. Tim lop                          |\n";
+        cout << "|4. Xem tat ca lop                   |\n";
+        cout << "|5. Chon lop de quan ly sinh vien    |\n";
+        cout << "|0. Thoat                            |\n";
+        cout << "+------------------------------------+\n";
         cout << "Nhap lua chon: ";
         cin >> choice;
         cin.ignore();

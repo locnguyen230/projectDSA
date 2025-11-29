@@ -1,5 +1,5 @@
 #include <iostream>
-#include "menu.cpp"
+#include "menu.h"
 #include "hashtable.h"
 using namespace std;
 

@@ -1,6 +1,7 @@
 #include "group.h"
 #include "bst.h"
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 // =====================
@@ -41,10 +42,16 @@ void deleteStudentInGroup(ClassGroup &g, string id) {
     if (g.root == nullptr) {
         cout << "Lop " << g.classID << " chua co sinh vien.\n";
         return;
+    }else {
+        treeNode* p = searchSV(g.root, id);
+        if (p == nullptr) {
+            cout << "Khong tim thay sinh vien co ma: " << id << endl;
+            return;
+        }
     }
 
-    deleteSV(g.root, id);
-    cout << "Da xoa sinh vien (neu ton tai): " << id << endl;
+    g.root = deleteSV(g.root, id);
+    cout << "Da xoa sinh vien: " << id << endl;
 }
 
 
@@ -60,5 +67,11 @@ void printGroup(const ClassGroup &g) {
     }
 
     int stt=0;
+    cout << "+-----------------------------------------+\n";
+    cout << "| " << left << setw(3) << "STT ";
+    cout << "| " << left << setw(17) << "TEN";
+    cout << "|  " << left << setw(6) << "MSSV";
+    cout << "| " << left << setw(5) << "GRADE " << "|\n";
     printSV(g.root, stt);
+     cout << "+-----------------------------------------+\n";
 }
