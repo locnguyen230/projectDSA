@@ -9,14 +9,14 @@ const int TABLE_SIZE = 10;
 
 struct hashTableClass {
     string classID;
-    group* lop;
+    ClassGroup* lop;
     hashTableClass();
 };
 
 int hashFunction(string key);
 
 void insertClass(hashTableClass table[], string classID);
-group* findClass(hashTableClass table[], string classID);
+ClassGroup* findClass(hashTableClass table[], string classID);
 
 // optional
 void deleteClass(hashTableClass table[], string classID);

@@ -5,21 +5,21 @@
 #include <string>
 using namespace std;
 
-struct group {
+struct ClassGroup {
     string classID;
     treeNode* root;
-    group(string malop){
+    ClassGroup(string malop){
         classID = malop;
         root = nullptr; 
     }
 };
 
 // thêm / tim / xóa trong lớp
-void addStudentToGroup(group &g, inf sv);
-void findStudentInGroup(group &g);
-void deleteStudentInGroup(group &g, string id);
+void addStudentToGroup(ClassGroup &g, SinhVien sv);
+void findStudentInGroup(ClassGroup &g);
+void deleteStudentInGroup(ClassGroup &g, string id);
 
 // in danh sách 1 lớp
-void printGroup(const group &g);
+void printGroup(const ClassGroup &g);
 
 #endif

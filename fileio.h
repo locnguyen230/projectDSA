@@ -1,6 +1,7 @@
 #ifndef FILEIO_H
 #define FILEIO_H
 
+#include "hashtable.h"
 #include "group.h"
 #include <string>
 using namespace std;
@@ -15,8 +16,16 @@ using namespace std;
 // SV01 | Nguyen Van A | 9.0
 // SV02 | Le Thi B | 8.5
 // END
+// 
+// CNTT2
+// SV11 | Nguyen Thi A | 9.0
+// SV12 | Le Van B | 8.5
+// END
 // ================================================
-void loadGroupFromFile(group &g, const string &filename);
+
+void loadAllClassesFromFile(hashTableClass table[], const string &filename);
+
+
 
 // ================================================
 // GHI DANH SÁCH SINH VIÊN CỦA LỚP RA FILE TXT
@@ -29,6 +38,6 @@ void loadGroupFromFile(group &g, const string &filename);
 // SV02 | Le Thi B | 8.5
 // END
 // ================================================
-void saveGroupToFile(const group &g, const string &filename);
 
+void saveAllClassesToFile(hashTableClass table[], const string &filename);
 #endif
