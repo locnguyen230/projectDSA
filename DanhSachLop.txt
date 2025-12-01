@@ -1,0 +1,51 @@
+cntt1
+it01 | nguyen van a | 9.0
+it02 | le thi b | 8.5
+it03 | tran van c | 7.8
+it04 | phan thi d | 8.2
+it05 | hoang van e | 7.5
+it06 | do thi f | 8.8
+it07 | pham van g | 9.1
+it08 | vu thi h | 7.9
+it09 | bui van i | 8.4
+it10 | dang thi j | 7.6
+it11 | ly van k | 8.9
+it12 | ngo thi l | 8.1
+it25 | truong van m | 6.5
+it26 | dinh thi n | 5.3
+it27 | nguyen van o | 9.5
+it28 | le thi p | 4.8
+it29 | tran van q | 10.0
+it30 | phan thi r | 6.1
+it31 | hoang van s | 7.0
+it32 | do thi t | 5.8
+it33 | pham van u | 9.7
+it34 | vu thi v | 4.0
+END
+
+cntt2
+it13 | nguyen thi a | 9.0
+it14 | le van b | 8.5
+it15 | tran thi c | 8.0
+it16 | phan van d | 7.7
+it17 | hoang thi e | 8.3
+it18 | do van f | 7.9
+it19 | pham thi g | 9.2
+it20 | vu van h | 7.4
+it21 | bui thi i | 8.6
+it22 | dang van j | 7.3
+it23 | ly thi k | 8.7
+it24 | ngo van l | 7.1
+it35 | truong thi m | 5.0
+it36 | dinh van n | 9.8
+it37 | nguyen thi o | 6.8
+it38 | le van p | 4.5
+it39 | tran thi q | 9.9
+it40 | phan van r | 5.5
+it41 | hoang thi s | 6.2
+it42 | do van t | 10.0
+it43 | pham thi u | 4.3
+it44 | vu van v | 7.2
+END
+
+

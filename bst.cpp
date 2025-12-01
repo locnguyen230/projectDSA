@@ -3,11 +3,9 @@
 #include <iomanip>
 using namespace std;
 
-// =======================
-//  Hàm hỗ trợ
-// =======================
+// Ham ho tro
 
-// chuyển string sang lowercase
+// chuyen sang chu thuong
 string toLower(string s) {
     for (char &c : s)
         if (c >= 'A' && c <= 'Z')
@@ -15,16 +13,14 @@ string toLower(string s) {
     return s;
 }
 
-// =======================
-//  INSERT — Thêm sinh viên vào BST
-// =======================
+
+//  Thêm sinh viên vào BST
 void insertSV(treeNode*& root, SinhVien sv) {
     if (root == nullptr) {
         root = new treeNode(sv);
         return;
     }
 
-    // chuẩn hóa id
     sv.id = toLower(sv.id);
 
     treeNode* cur = root;
@@ -52,9 +48,9 @@ void insertSV(treeNode*& root, SinhVien sv) {
 }
 
 
-// =======================
-//  SEARCH — Tìm sinh viên theo ID
-// =======================
+
+//  Tìm sinh viên theo ID
+
 treeNode* searchSV(treeNode* root, string id) {
     id = toLower(id);
 
@@ -71,9 +67,9 @@ treeNode* searchSV(treeNode* root, string id) {
 }
 
 
-// =======================
-//  DELETE — Xóa sinh viên theo ID
-// =======================
+
+//   Xóa sinh viên theo ID
+
 treeNode* findMin(treeNode* root) {
     while (root->left != nullptr)
         root = root->left;
@@ -92,7 +88,6 @@ treeNode* deleteSV(treeNode* root, string id) {
         root->right = deleteSV(root->right, id);
     }
     else {
-        // node cần xóa
 
         // TH1: không có con
         if (!root->left && !root->right) {
@@ -112,7 +107,7 @@ treeNode* deleteSV(treeNode* root, string id) {
             return temp;
         }
 
-        // TH3: có 2 con → tìm min bên phải
+        // TH3: có 2 con tim node the man trai cung ben phai
         treeNode* minRight = findMin(root->right);
         root->sv = minRight->sv;
         root->right = deleteSV(root->right, minRight->sv.id);
@@ -122,11 +117,10 @@ treeNode* deleteSV(treeNode* root, string id) {
 }
 
 
-// =======================
-//  PRINT — In cây theo Inorder
-// =======================
+
+//  In danh sach sv theo Inorder(L-N-R)
+
 void printOneSV(SinhVien sv, int stt) {
-    cout << "+-----------------------------------------+\n";
     cout << "|  " << left << setw(3) << stt;
     cout << "| " << left << setw(17) << sv.name;
     cout << "|  " << left << setw(6) << sv.id;
@@ -144,10 +138,4 @@ void printSV(treeNode* root, int &stt ) {
 }
 
 
-// =======================
-//  THỐNG KÊ — Tổng điểm
-// =======================
-float countGrades(treeNode* root) {
-    if (root == nullptr) return 0;
-    return root->sv.grade + countGrades(root->left) + countGrades(root->right);
-}
+

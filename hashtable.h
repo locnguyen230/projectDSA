@@ -13,15 +13,13 @@ struct hashTableClass {
     hashTableClass();
 };
 
+
 int hashFunction(string key);
 
+//chuc nang
 void insertClass(hashTableClass table[], string classID);
 ClassGroup* findClass(hashTableClass table[], string classID);
-
-// optional
 void deleteClass(hashTableClass table[], string classID);
-
-// in toàn bộ lớp
 void printAllClasses(hashTableClass table[]);
 
 #endif

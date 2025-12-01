@@ -13,13 +13,13 @@ void menuStudent(ClassGroup* lop) {
     int choice;
 
     while (true) {
-        cout << "+--------------------------------------+\n";
+        cout << "\n+--------------------------------------+\n";
         cout << "|===== MENU SINH VIEN - LOP " << lop->classID << " =====|\n";
         cout << "|1. Them sinh vien                     |\n";
         cout << "|2. Tim sinh vien theo ID              |\n";
         cout << "|3. Xoa sinh vien                      |\n";
         cout << "|4. In danh sach sinh vien             |\n";
-        cout << "|5. In danh sach sinh vien theo diem   |\n";
+        cout << "|5. In bang xep hang trong lop         |\n";
         cout << "|6. Tao bang thong ke                  |\n";
         cout << "|0. Quay lai                           |\n";
         cout << "+--------------------------------------+\n";
@@ -70,6 +70,12 @@ void menuStudent(ClassGroup* lop) {
             printGroup(*lop);
             break;
 
+        case 5:
+            printScoreRanking(*lop);
+            break;
+        case 6:
+            printStatistics(*lop);
+            break;
         case 0:
             return;
 
@@ -87,7 +93,7 @@ void menuClass(hashTableClass table[]) {
     string classID;
 
     while (true) {
-        cout << "+------------------------------------+\n";
+        cout << "\n+------------------------------------+\n";
         cout << "|========= MENU QUAN LY LOP =========|\n";
         cout << "|1. Them lop                         |\n";
         cout << "|2. Xoa lop                          |\n";
@@ -146,6 +152,5 @@ void menuClass(hashTableClass table[]) {
         }
     }
 }
-
 
 
