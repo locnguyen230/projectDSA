@@ -10,6 +10,7 @@ const int TABLE_SIZE = 10;
 struct hashTableClass {
     string classID;
     ClassGroup* lop;
+    int status;
     hashTableClass();
 };
 

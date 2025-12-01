@@ -46,7 +46,7 @@ void saveAllClassesToFile(hashTableClass table[], const string &filename) {
     cout << "Đa luu du lieu ra file thanh cong!\n";
 }
 
-//  xử lý chuỗi khoang trang dau cuoi
+// xu ly khoang trang dau cuoi
 
 static void trimString(string &s) {
     while (!s.empty() && s.front() == ' ') s.erase(s.begin());
